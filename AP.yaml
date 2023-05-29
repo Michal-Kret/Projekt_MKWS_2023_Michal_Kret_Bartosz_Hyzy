@@ -1,0 +1,14 @@
+phases:
+- name: Apgas
+  thermo: ideal-gas
+  species: [AP]
+  state: {T: 513, P: 1.01325e+05}
+
+species:
+- name: AP
+  composition: {N: 1, H: 4, Cl: 1, H: 4}
+  thermo:
+    model: Shomate
+    temperature-ranges: [513.0,1500.0]
+    data:
+    - [225.215,-203.056,402.231,-137.733,-7.484,-373.073,476.726]
