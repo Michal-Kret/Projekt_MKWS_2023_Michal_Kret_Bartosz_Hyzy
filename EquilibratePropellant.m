@@ -17,6 +17,6 @@ Propellant_parameters.values(8)=thermalConductivity(transport); %Thermal conduct
 Propellant_parameters.values(9)=cp_mass(propellant)*Propellant_parameters.values(7)/Propellant_parameters.values(8);
 Propellant_parameters.names={'rho';'T';'kappa';'R';'m_mol';'a';'mu';'alpha';'Pr'};
 Propellant_parameters.units={'kg/m3';'K';'';'J/kg/K';'kg/kmol';'m/s';'Pa*s';'W/m/K';''};
-writetable(struct2table(Propellant_parameters),'Results/Propellant_parameters.txt','Delimiter','tab');
+Propellant_parameters=struct2table(Propellant_parameters);
 end
 
